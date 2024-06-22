@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- info -->
+    <title>My Portfolio</title>
+    <link rel="icon" href="immagini/pc.png">
+
+    <!-- Crediti -->
+    <meta name="author" content="Raffaele Pio Mantuano">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/mediaCell.css">
+    <link rel="stylesheet" href="CSS/mediaTab.css">
+
+    <!-- Bootstrap -->
+    <link 
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+        rel="stylesheet" 
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
+        crossorigin="anonymous" 
+    />
+
+    <script 
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
+        crossorigin="anonymous">
+    </script>
+
+
+</head>
+
+<body>
+    
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+
+          <a class="navbar-brand" href="#"></a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+
+            <ul class="navbar-nav">
+
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#home">Home</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#progetti">My projects</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#skill">My skills</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#certificazioni">Certifications</a>
+              </li>
+
+              <li class="nav-item dropdown">
+
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Social
+                </a>
+
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="https://github.com/The-mantux" target="_blank"> <img src="immagini/github.png" alt="Github logo" width="20px"> Github</a></li>
+                  <li><a class="dropdown-item" href="https://www.instagram.com/the_mantux?igsh=MWU0ZnF6M2N5aHN6MQ==" target="_blank"> <img src="immagini/insta.jpg" alt="Instagram logo" width="20px"> Instagram</a></li>
+                  <li><a class="dropdown-item" href="https://mastodon.social/@the_mantux"target="_blank"> <img src="immagini/mastodon.png" alt="Mastodon logo" width="20px"> Mastodon</a></li>
+                </ul>
+
+              </li>
+
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <section class="presentazione" id="home">
+        <h1>Hi, I'm <span class="testoBlu">mantux</span></h1>
+        <h3>i'm junior developer</h3>
+        <div class="social">
+            <a href="https://github.com/The-mantux" target="_blank"><img src="immagini/github.png" alt="Github"></a>
+            <a href="https://www.instagram.com/the_mantux?igsh=MWU0ZnF6M2N5aHN6MQ==" target="_blank"><img src="immagini/insta.jpg" alt="Instagram"></a>
+            <a href="https://mastodon.social/@the_mantux" target="_blank"><img src="immagini/mastodon.png" alt="Mastodon"></a>
+        </div>
+        <img src="immagini/mano.png" alt="mano che saluta" class="mano">
+    </section>
+
+
+
+    <section class="progetti" id="progetti">
+
+        <div class="title">
+            <h2>My projects <img src="immagini/eyes_1f440.png" alt="i miei progetti"></h2>
+        </div>
+
+        <div class="prova">
+            <!-- Progetto 1-->
+            <div class="progetto">
+                <img src="immagini/montagne.jpg" alt="immagine1">
+                <h3>Project 1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis recusandae dicta id? Eaque odit molestiae delectus! Voluptatum dignissimos cumque, assumenda labore fugit ad officia quia? Quis provident cum dolorem omnis.</p>
+                <span class="bottone"><button type="button" class="btn btn-primary">Source code</button></span>
+            </div>
+
+            <!-- Progetto 2-->
+            <div class="progetto">
+                <img src="immagini/montagne.jpg" alt="immagine2">
+                <h3>Project 2</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis recusandae dicta id? Eaque odit molestiae delectus! Voluptatum dignissimos cumque, assumenda labore fugit ad officia quia? Quis provident cum dolorem omnis.</p>
+                <span class="bottone"><button type="button" class="btn btn-primary">Source code</button></span>
+            </div>
+
+            <!-- Progetto 3-->
+            <div class="progetto">
+                <img src="immagini/montagne.jpg" alt="immagine3">
+                <h3>Project 3</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis recusandae dicta id? Eaque odit molestiae delectus! Voluptatum dignissimos cumque, assumenda labore fugit ad officia quia? Quis provident cum dolorem omnis.</p>
+                <span class="bottone"><button type="button" class="btn btn-primary">Source code</button></span>
+            </div> 
+        </div>
+
+        <div class="altro">
+            <a href="https://github.com/The-mantux" target="_blank"  class="altro"> View more on GitHub</a>
+        </div>
+    </section>
+
+
+
+
+    <section class="Skill" id="skill">
+
+        <div class="title">
+            <h2>My skills <img src="immagini/pc.png" alt="progetti"></h2>
+        </div>
+
+       <div class="prova">
+            <div class="skill">
+                <img src="immagini/Linguaggi/HTML.png" alt="HTML">
+                <h3>HTML</h3>
+            </div>
+
+            <div class="skill">
+                <img src="immagini/Linguaggi/CSS.png" alt="CSS">
+                <h3>CSS</h3>
+            </div>
+
+            <div class="skill">
+                <img src="immagini/Linguaggi/Python.png" alt="Python">
+                <h3>Python</h3>
+            </div>
+
+            <div class="skill">
+                <img src="immagini/Linguaggi/cpp.png" alt="C++">
+                <h3>C++</h3>
+            </div>
+       </div>
+
+       <h3 class="altro1">i want to learn...</h3>
+
+       <div class="prova">
+
+        <div class="skill">
+            <img src="immagini/Linguaggi/dart.png" alt="Dart">
+            <h3>Dart</h3>
+        </div>
+
+        <div class="skill">
+            <img src="immagini/Linguaggi/flutter.png" alt="Flutter">
+            <h3>Flutter</h3>
+        </div>
+       
+    </section>
+
+
+
+    <section class="certificazioni" id="certificazioni">
+
+        <div class="title">
+            <h2>Certifications</h2>
+        </div>
+
+        <ul class="cert">
+            <li>🏆 <a href="https://www.cloudskillsboost.google/paths/118/course_templates/536" target="_blank">Introduction to Generative AI</a></li>
+        </ul>
+
+    </section>
+
+</body>
+</html>

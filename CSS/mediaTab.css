@@ -1,0 +1,50 @@
+:root{
+    --nero: #080708;
+    --rosso: #DF2935;
+    --blu: #3772FF;
+    --giallo: #F2BB05;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+section{
+    width: 100%;
+    padding: 20px 10px;
+    box-sizing: border-box;
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    /** PRESENTAZIONE **/
+    .presentazione h1{
+        font-size: 80px;
+    }
+    
+    .presentazione h3{
+        font-size: 35px;
+    }
+
+    .mano{
+        width: 400px;
+    }
+
+    .social img {
+        width: 45px;
+        margin: 10px;
+    }
+
+    .prova {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around; /* Aggiunge spazio tra gli elementi */
+    }
+
+    .progetto {
+        margin: 10px;
+        width: calc(50% - 20px); /* Aggiusta la larghezza per due colonne con margine */
+    }
+}

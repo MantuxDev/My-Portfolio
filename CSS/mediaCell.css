@@ -1,0 +1,73 @@
+:root{
+    --nero: #080708;
+    --rosso: #DF2935;
+    --blu: #3772FF;
+    --giallo: #F2BB05;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+section{
+    width: 100%;
+    padding: 20px 10px;
+    box-sizing: border-box;
+}
+
+@media (max-width: 480px){
+    /** PRESENTAZIONE **/
+    .presentazione h1{
+        font-size: 70px;
+    }
+    
+    .presentazione h3{
+        font-size: 30px;
+    }
+
+    .mano{
+        width: 250px;
+    }
+
+    /** PROGETTI **/
+    .title{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 5px;
+    }
+
+    .title h2{
+        font-size: 35px;
+        
+    }
+    
+    .title img{
+        width: 50px;
+    }
+
+    .prova{
+        flex-direction: column;
+    }
+
+    .progetto{
+        margin: 20px;
+        padding: 10px;
+        height: 530px;
+        width: 280px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    }
+
+    /** SKILL **/
+    .skill{
+        margin: 15px;
+        padding: 15px;
+        height: 250px;
+        width: 200px;
+    }
+}
