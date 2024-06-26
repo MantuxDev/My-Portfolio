@@ -117,13 +117,12 @@ section.progetti {
     max-width: 330px;
     min-height: 630px;
     max-height: 630px;
-    justify-content: space-between; /* Distribuisce lo spazio tra gli elementi */
+    justify-content: space-between;
     overflow: hidden;
     border-radius: 20px;
     background: white;
     margin: 30px;
     transition: 0.5s;
-    border: solid 2px black;
 }
 
 .cards:hover {
