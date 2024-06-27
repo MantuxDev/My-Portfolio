@@ -47,4 +47,43 @@ section{
         margin: 10px;
         width: calc(50% - 20px); /* Aggiusta la larghezza per due colonne con margine */
     }
+
+    /** About me **/
+
+    .chi-sono{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profilo img{
+        width: 300px;
+        margin: auto;
+    }
+    .profilo img:hover{
+        margin: 30px;
+    }
+
+    .testo p{
+        font-size: 25px;
+        padding: 5px;
+        margin: 10PX 30PX;
+        font-weight: 400;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1400px) {
+    .chi-sono{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profilo img{
+        width: 300px;
+        margin: auto;
+    }
+    .profilo img:hover{
+        margin: 30px;
+    }
 }

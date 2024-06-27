@@ -6,7 +6,7 @@
 
     <!-- info -->
     <title>My Portfolio</title>
-    <link rel="icon" href="immagini/pc.png">
+    <link rel="icon" href="immagini/Emoji/pc.png">
 
     <!-- Crediti -->
     <meta name="author" content="Raffaele Pio Mantuano">
@@ -36,7 +36,7 @@
 <body>
     
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
         <div class="container-fluid">
 
           <a class="navbar-brand" href="#"></a>
@@ -51,6 +51,10 @@
 
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#home">Home</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#me">About me</a>
               </li>
 
               <li class="nav-item">
@@ -72,9 +76,9 @@
                 </a>
 
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="https://github.com/The-mantux" target="_blank"> <img src="immagini/github.png" alt="Github logo" width="20px"> Github</a></li>
-                  <li><a class="dropdown-item" href="https://www.instagram.com/the_mantux?igsh=MWU0ZnF6M2N5aHN6MQ==" target="_blank"> <img src="immagini/insta.jpg" alt="Instagram logo" width="20px"> Instagram</a></li>
-                  <li><a class="dropdown-item" href="https://mastodon.social/@the_mantux"target="_blank"> <img src="immagini/mastodon.png" alt="Mastodon logo" width="20px"> Mastodon</a></li>
+                  <li><a class="dropdown-item" href="https://github.com/The-mantux" target="_blank"> <img src="immagini/social/github.png" alt="Github logo" width="20px"> Github</a></li>
+                  <li><a class="dropdown-item" href="https://www.instagram.com/the_mantux?igsh=MWU0ZnF6M2N5aHN6MQ==" target="_blank"> <img src="immagini/social/insta.png" alt="Instagram logo" width="20px"> Instagram</a></li>
+                  <li><a class="dropdown-item" href="https://mastodon.social/@the_mantux"target="_blank"> <img src="immagini/social/mastodon.png" alt="Mastodon logo" width="20px"> Mastodon</a></li>
                 </ul>
 
               </li>
@@ -88,11 +92,57 @@
         <h1>Hi, I'm <span class="testoBlu">mantux</span></h1>
         <h3>i'm junior developer</h3>
         <div class="social">
-            <a href="https://github.com/The-mantux" target="_blank"><img src="immagini/github.png" alt="Github"></a>
-            <a href="https://www.instagram.com/the_mantux?igsh=MWU0ZnF6M2N5aHN6MQ==" target="_blank"><img src="immagini/insta.jpg" alt="Instagram"></a>
-            <a href="https://mastodon.social/@the_mantux" target="_blank"><img src="immagini/mastodon.png" alt="Mastodon"></a>
+            <div class="social">
+
+                <a href="https://github.com/The-mantux" target="_blank" class="social-link">
+                    <img src="immagini/social/github.png" alt="Github">
+                    <div class="testo-hover">Github</div>
+                </a>
+
+                <a href="https://www.instagram.com/the_mantux?igsh=MWU0ZnF6M2N5aHN6MQ==" target="_blank" class="social-link">
+                    <img src="immagini/social/insta.png" alt="Instagram">
+                    <div class="testo-hover">Instagram</div>
+                </a>
+
+                <a href="https://mastodon.social/@the_mantux" target="_blank" class="social-link">
+                    <img src="immagini/social/mastodon.png" alt="Mastodon">
+                    <div class="testo-hover">Mastodon</div>
+                </a>
+
+            </div>
         </div>
-        <img src="immagini/mano.png" alt="mano che saluta" class="mano">
+        <img src="immagini/Emoji/mano.png" alt="mano che saluta" class="mano">
+    </section>
+
+    <section class="about-me" id="me">
+
+        <div class="title">
+            <h2>About me <img src="immagini/Emoji/lente.png" alt="about me"></h2>
+        </div>
+
+        <div class="chi-sono">
+
+            <div class="profilo">
+                <img src="immagini/profilo.jpg" alt="io">
+            </div>
+
+            <div class="testo">
+
+                <p>
+                    Sono uno studente al quarto anno di superiori con indirizzo informatica. La mia passione per la <span class="testoBlu" style="font-weight: bold;">tecnologia</span> spazia sia dal lato software che hardware.
+                    Mi piacerebbe lavorare come tecnico hardware o sviluppatore, con un particolare interesse sia per il software che per la creazione di videogame.
+                </p>
+
+                <br>
+
+                <p>
+                    Nel mio tempo libero, quando non ho nulla da fare, mi diverto a smontare e rimontare PC o altre apparecchiature elettroniche, affinando le mie <span class="testoBlu" style="font-weight: bold;">competenze
+                        pratiche</span> e approfondendo la mia conoscenza dei componenti hardware. Sono anche un appassionato di videogiochi, in particolare quelli retrò, 
+                    e vorrei espandere le mie capacità imparando la modellazione 3D.
+                </p>
+            </div>
+
+        </div>
     </section>
 
 
@@ -100,7 +150,7 @@
     <section class="progetti" id="progetti">
 
         <div class="title">
-            <h2>My projects <img src="immagini/eyes_1f440.png" alt="i miei progetti"></h2>
+            <h2>My projects <img src="immagini/Emoji/eyes_1f440.png" alt="i miei progetti"></h2>
         </div>
 
         <!-- Card -->
@@ -115,7 +165,7 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, saepe adipisci? Exercitationem fuga sed tenetur aperiam commodi</p>
                 </div>
 
-                <a href="/" class="bn5"> Github <img src="immagini/github.png" style="height: 30px ; width: 30px; margin-left: 10px; filter: brightness(0) invert(1); "></a>
+                <a href="/" class="bn5"> Github <img src="immagini/social/github.png" style="height: 30px ; width: 30px; margin-left: 10px; filter: brightness(0) invert(1); "></a>
             </div>
 
             <div class="cards">
@@ -127,7 +177,7 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, saepe adipisci? Exercitationem fuga sed tenetur aperiam commodi</p>
                 </div>
 
-                <a href="/" class="bn5"> Github <img src="immagini/github.png" style="height: 30px ; width: 30px; margin-left: 10px; filter: brightness(0) invert(1); "></a>
+                <a href="/" class="bn5"> Github <img src="immagini/social/github.png" style="height: 30px ; width: 30px; margin-left: 10px; filter: brightness(0) invert(1); "></a>
             </div>
 
             <div class="cards">
@@ -139,7 +189,7 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, saepe adipisci? Exercitationem fuga sed tenetur aperiam commodi</p>
                 </div>
 
-                <a href="/" class="bn5"> Github <img src="immagini/github.png" style="height: 30px ; width: 30px; margin-left: 10px; filter: brightness(0) invert(1); "></a>
+                <a href="/" class="bn5"> Github <img src="immagini/social/github.png" style="height: 30px ; width: 30px; margin-left: 10px; filter: brightness(0) invert(1); "></a>
             </div>
 
         </div>
@@ -155,7 +205,7 @@
     <section class="Skill" id="skill">
 
         <div class="title">
-            <h2>My skills <img src="immagini/pc.png" alt="progetti"></h2>
+            <h2>My skills <img src="immagini/Emoji/pc.png" alt="progetti"></h2>
         </div>
 
        <div class="prova">
