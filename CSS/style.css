@@ -10,17 +10,6 @@
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
-    box-sizing: border-box;
-}
-
-::target-text {
-    color: var(--blu);
-}
-
-section {
-    width: 100%;
-    padding: 20px 10px;
-    box-sizing: border-box;
 }
 
 section.presentazione {
@@ -132,7 +121,7 @@ section.presentazione {
 }
 
 .testo p{
-    font-size: 30px;
+    font-size: 25px;
     padding: 5px;
     margin: 10PX 100PX;
     font-weight: 400;
@@ -321,7 +310,6 @@ section.progetti {
     border-radius: 25px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     transition: 0.5s;
-    filter: grayscale(30%);
 }
 
 .skill img {
@@ -339,8 +327,15 @@ section.progetti {
 
 .skill:hover {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    background-color: var(--blu);
+    color: white;
     transform: scale(1.1);
-    filter: grayscale(0%);
+}
+
+.skill:hover img{
+   background-color: white;
+   padding : 5px;
+   border-radius: 20%;
 }
 
 .altro1 {
@@ -351,19 +346,31 @@ section.progetti {
 
 .cert {
     margin: 30px;
-    text-align: center;
     font-size: 1.5em;
-    list-style-type: none;
     color: black;
 }
 
 .cert a {
     text-decoration: none;
     color: black;
-    transition: 0.5s;
+    transition: 0.2s;
 }
+
+.cert li {
+    margin: 10px;
+    list-style: none;
+}
+
+.cert img {
+    border-radius: 10px;
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    justify-content: center;
+}
+
 
 .cert a:hover {
     color: var(--blu);
-    font-size: 1.1em;
+    font-size: 1.6rem;
 }
