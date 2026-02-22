@@ -19,29 +19,18 @@
             <a href="#home" style="text-decoration: none;">
                 <h1>mantu</h1>
             </a>
-
-            <!-- Hamburger menu -->
-            <button class="hamburger">
-                &#9776;
+        
+            <button class="hamburger" aria-label="Apri menu">
+                <span></span>
+                <span></span>
+                <span></span>
             </button>
-
-
+        
             <ul class="link">
-                <li class="nav-item">
-                    <a href="#chiSono" class="nav-link">Chi sono</a>
-                </li>
-
-                <li class="nav-item">
-                    <a href="#progetti" class="nav-link">Progetti</a>
-                </li>
-
-                <li class="nav-item">
-                    <a href="#Graphic" class="nav-link">Graphic</a>
-                </li>
-
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Contatti</a>
-                </li>
+                <li class="nav-item"><a href="#chiSono" class="nav-link">Chi sono</a></li>
+                <li class="nav-item"><a href="#progetti" class="nav-link">Progetti</a></li>
+                <li class="nav-item"><a href="#Graphic" class="nav-link">Graphic</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Contatti</a></li>
             </ul>
         </nav>
 
@@ -64,7 +53,7 @@
                 </div>
 
                 <div class="text">
-                    <h1>Chi sono?</h1>
+                    <h1>🤔 Chi sono?</h1>
                     <p>
                         Ciao, sono Raffaele.
                         Mi appassionano la tecnologia e la creatività in tutte le loro forme: sviluppo software, web e design grafico.
@@ -82,7 +71,7 @@
 
             <div class="container">
                 <div class="card-chiSono">
-                    <h2>Obiettivi</h2>
+                    <h2>🎯Obiettivi</h2>
                     <p>
                         Voglio crescere come sviluppatore e come designer, costruendo un profilo versatile.
                         L’obiettivo, nel tempo, è lavorare su progetti sempre più completi, dove tecnica e design convivono.
@@ -90,7 +79,7 @@
                 </div>
 
                 <div class="card-chiSono">
-                    <h2>Il mio percorso</h2>
+                    <h2>🛣️Il mio percorso </h2>
                     <p>
                         Sto completando gli studi in informatica e continuo a formarmi anche in modo autonomo.
                         Parallelamente ho sviluppato interesse per la grafica: ho realizzato poster, loghi e piccoli progetti di branding.
@@ -98,7 +87,7 @@
                 </div>
 
                 <div class="card-chiSono">
-                    <h2>Le mie passioni</h2>
+                    <h2>🚀Le mie passioni</h2>
                     <p>
                         Mi piace lavorare su progetti diversi: programmi, siti web, interfacce, poster e identità visive.
                         Nel tempo libero studio nuovi strumenti, guardo progetti di altri creativi e provo a sperimentare con idee mie.
@@ -303,100 +292,7 @@
             <p>2026 - Raffaele Pio Mantuano</p>
         </footer>
 
-
-        <script>
-            const hamburger = document.querySelector('.hamburger');
-            const navLinks = document.querySelector('.link');
-            const linkItems = document.querySelectorAll('.nav-link');
-        
-            // Toggle menu quando clicchi sull'hamburger
-            hamburger.addEventListener('click', () => {
-                navLinks.classList.toggle('active');
-            });
-        
-            // Chiudi il menu quando clicchi su una voce
-            linkItems.forEach(link => {
-                link.addEventListener('click', () => {
-                    navLinks.classList.remove('active');
-                });
-            });
-
-            const track = document.querySelector(".track");
-            const cards = Array.from(document.querySelectorAll(".card"));
-
-            let index = 0;
-            const cardWidth = cards[0].offsetWidth + 25;
-
-            // evidenziazione card
-            function updateCardsState() {
-                cards.forEach((c, i) => {
-                    c.classList.remove("active", "near");
-                    if (i === index) c.classList.add("active");
-                    if (i === index - 1 || i === index + 1) c.classList.add("near");
-                });
-            }
-
-            // movimento
-            function goTo(i) {
-                index = Math.max(0, Math.min(i, cards.length - 1));
-                track.style.transform = `translateX(-${index * cardWidth}px)`;
-                updateCardsState();
-                updateButtons();
-            }
-
-            // bottoni
-            const prevBtn = document.getElementById("prevBtn");
-            const nextBtn = document.getElementById("nextBtn");
-
-            function updateButtons() {
-                prevBtn.disabled = index === 0;
-                nextBtn.disabled = index === cards.length - 1;
-            }
-
-            prevBtn.addEventListener("click", () => goTo(index - 1));
-            nextBtn.addEventListener("click", () => goTo(index + 1));
-
-            // inizializzazione
-            updateCardsState();
-            updateButtons();
-
-            // Carousel Designer
-            const trackDesigner = document.querySelector("#Graphic .track");
-            const cardsDesigner = Array.from(trackDesigner.querySelectorAll(".cardDesign"));
-
-            let indexDesigner = 0;
-            const cardWidthDesigner = cardsDesigner[0].offsetWidth + 25;
-
-            function updateCardsStateDesigner() {
-                cardsDesigner.forEach((c, i) => {
-                    c.classList.remove("active", "near");
-                    if (i === indexDesigner) c.classList.add("active");
-                    if (i === indexDesigner - 1 || i === indexDesigner + 1) c.classList.add("near");
-                });
-            }
-
-            function goToDesigner(i) {
-                indexDesigner = Math.max(0, Math.min(i, cardsDesigner.length - 1));
-                trackDesigner.style.transform = `translateX(-${indexDesigner * cardWidthDesigner}px)`;
-                updateCardsStateDesigner();
-                updateButtonsDesigner();
-            }
-
-            const prevBtnDesigner = document.getElementById("prevBtnDesigner");
-            const nextBtnDesigner = document.getElementById("nextBtnDesigner");
-
-            function updateButtonsDesigner() {
-                prevBtnDesigner.disabled = indexDesigner === 0;
-                nextBtnDesigner.disabled = indexDesigner === cardsDesigner.length - 1;
-            }
-
-            prevBtnDesigner.addEventListener("click", () => goToDesigner(indexDesigner - 1));
-            nextBtnDesigner.addEventListener("click", () => goToDesigner(indexDesigner + 1));
-
-            updateCardsStateDesigner();
-            updateButtonsDesigner();
-
-        </script>
+        <script src="script.js"></script>
 
     </body>
 </html>

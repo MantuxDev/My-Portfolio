@@ -17,85 +17,105 @@ body {
     background-color:white;
 }
 
-.nav{
+.nav {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 9999;   /* sopra a tutte le section */
-    display: grid;
-    grid-template-columns: auto 1fr;
+    z-index: 9999;
+    display: flex; 
+    justify-content: space-between;
     align-items: center;
-    padding: 25px;
-    background-color: rgba(255,255,255,.95);
+    padding: 20px 48px; 
+    background-color: rgba(255, 255, 255, 0.8); 
+    transition: 0.5s;
+    border-bottom: 1px solid transparent;
 }
 
-.nav h1{
+.nav.scrolled {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    backdrop-filter: blur(4px);
+}
+
+.nav h1 {
+    color: var(--ceruleo); 
+    font-size: 28px;
+}
+
+.link {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+    align-items: center;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: gray;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
     color: var(--ceruleo);
 }
 
+/* Hamburger Style (i tre trattini) */
 .hamburger {
     display: none;
-    font-size: 28px;
+    flex-direction: column;
+    gap: 6px;
     background: none;
     border: none;
     cursor: pointer;
-    color: gray;
 }
 
-.hamburger:hover {
-    color: black;
+.hamburger span {
+    width: 24px;
+    height: 2px;
+    background: gray;
+    display: block;
 }
 
-.link{
-    display: flex;
-    justify-self:end;
-    gap: 25px;
-    list-style: none;
-    padding-left: 0;
-}
-
-.nav-link{
-    text-decoration: none;
-    color: gray;
-    transition: 0.2s;
-}
-
-.nav-link:hover{
-    color: black;
-}
-
+/* MEDIA QUERY - Comportamento Mobile */
 @media (max-width: 768px) {
     .nav {
-        display: flex;
-        justify-content: space-between; /* h1 a sinistra, hamburger a destra */
-        align-items: center;
-        padding: 15px 25px;
-    }
-
-    .link {
-        display: none; /* nascosto di default */
-        flex-direction: column;
-        gap: 15px;
-        width: 100%;
-        text-align: center;
-        background-color: rgba(255,255,255,.95); /* sfondo menu */
-        position: absolute;
-        top: 100%; /* sotto la navbar */
-        left: 0;
-        padding: 15px 0;
-        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        z-index: 1000;
-    }
-
-    .link.active {
-        display: flex;
-        margin: 0;
+        padding: 20px 24px;
     }
 
     .hamburger {
-        display: block; /* visibile solo su mobile */
-        margin: 0;
+        display: flex;
+    }
+
+    .link {
+        position: absolute;
+        top: 70px; /* Posizionamento identico alla seconda nav */
+        right: 24px;
+        background: #fff;
+        box-shadow: 0 12px 30px rgba(0,0,0,0.3);
+        border-radius: 16px;
+        display: none; /* Nascosto di default */
+        flex-direction: column;
+        min-width: 180px;
+        padding: 15px 0;
+        gap: 0; /* Gestito dai padding interni dei link */
+        backdrop-filter: blur(4px);
+    }
+
+    /* Classe per mostrare il menu (attiva via JS) */
+    .link.active {
+        display: flex;
+    }
+
+    .link li {
+        width: 100%;
+    }
+
+    .nav-link {
+        display: block;
+        padding: 12px 20px;
+        width: 100%;
+        text-align: center;
     }
 }
 
@@ -248,7 +268,7 @@ section{
 
 .card-chiSono:hover{
     transform: translateY(-4px) scale(1.01);
-    box-shadow: 0 15px 30px rgba(0,0,0,.18);
+    box-shadow: 0 15px 30px rgba(255,255,255,.18);
 }
 
 
