@@ -1,12 +1,18 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="it-IT">
 
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Mantu</title>
+
+        <!-- SEO -->
+        <title>Mantu | Developer & Graphic Designer</title>
+
+        <meta name="description" content="Sono Raffaele Pio Mantuano, un developer e graphic designer appassionato di tecnologia e creatività.">
         <meta name="author" content="Raffaele Pio Mantuano">
-        <link rel="icon" href="img/logoNoScritta.png">
+
+        <!-- Favicon -->
+        <link rel="icon" href="img/logoNoScritta.png" type="image/x-icon">
 
         <!-- CSS-->
         <link rel="stylesheet" href="css/style.css">
@@ -15,52 +21,61 @@
 
     <body>
         <!-- Navbar -->
-        <nav class="nav">
-            <a href="#home" style="text-decoration: none;">
-                <h1>mantu</h1>
-            </a>
-        
-            <button class="hamburger" aria-label="Apri menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        
-            <ul class="link">
-                <li class="nav-item"><a href="#chiSono" class="nav-link">Chi sono</a></li>
-                <li class="nav-item"><a href="#progetti" class="nav-link">Progetti</a></li>
-                <li class="nav-item"><a href="#Graphic" class="nav-link">Graphic</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Contatti</a></li>
-            </ul>
-        </nav>
+        <header role="header">
+            <nav class="nav">
+                <a href="#home" style="text-decoration: none;">
+                    <h1>mantu</h1>
+                </a>
+            
+                <button class="hamburger" aria-label="Apri menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            
+                <ul class="link">
+                    <li class="nav-item"><a href="#chiSono" class="nav-link">Chi sono</a></li>
+                    <li class="nav-item"><a href="#progetti" class="nav-link">Progetti</a></li>
+                    <li class="nav-item"><a href="#Graphic" class="nav-link">Graphic</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Contatti</a></li>
+                </ul>
+            </nav>
+        </header>
 
-        <section class="home" id="home">
+        <!-- Main Content -->
+        <main role="main">
+            <section class="home" id="home">
+                <div class="info">
+                    <h1>Developer & Graphic Designer</h1>
+                    <p>Realizzo prodotti digitali curati dal primo pixel all'ultima riga di codice.</p>
 
-            <div class="info">
-                <h1>Developer & Graphic Designer</h1>
-                <p>Realizzo prodotti digitali curati dal primo pixel all'ultima riga di codice.</p>
+                    <div class="social">
 
-                <div class="social">
-                    <a href="https://github.com/MantuxDev" target="_blank" >
-                        <img src="img/social/github-logo.webp" alt="Github">
-                    </a>
-                    <a href="https://displate.com/artist/mantux" target="_blank" >
-                        <img src="img/social/0x0.webp" alt="Displate">
-                    </a>
-                    <a href="https://www.youtube.com/@Mantux-j5h" target="_blank">
-                        <img src="img/social/youtube.webp" alt="Youtube">
-                    </a>
-                    <a href="https://mastodon.social/@the_mantux" target="_blank" >
-                        <img src="img/social/Mastodon_logotype__simple__new_hue.svg.webp" alt="Mastodon">
-                    </a>
-                    <a href="https://www.instagram.com/___mantux___/" target="_blank">
-                        <img src="img/social/instagram.webp" alt="Instagram">
-                    </a>
-                </div>
-            </div>
+                        <a href="https://github.com/MantuxDev" target="_blank" >
+                            <img src="img/social/github-logo.webp" alt="Github">
+                        </a>
 
-            <img src="img/io_11zon.webp" alt="io" >
-        </section>
+                        <a href="https://displate.com/artist/mantux" target="_blank" >
+                            <img src="img/social/0x0.webp" alt="Displate">
+                        </a>
+
+                        <a href="https://www.youtube.com/@Mantux-j5h" target="_blank">
+                            <img src="img/social/youtube.webp" alt="Youtube">
+                        </a>
+
+                        <a href="https://mastodon.social/@the_mantux" target="_blank" >
+                            <img src="img/social/Mastodon_logotype__simple__new_hue.svg.webp" alt="Mastodon">
+                        </a>
+
+                        <a href="https://www.instagram.com/___mantux___/" target="_blank">
+                            <img src="img/social/instagram.webp" alt="Instagram">
+                        </a>
+
+                    </div> <!-- social -->
+                </div><!-- info -->
+
+                <img src="img/io_11zon.webp" alt="io" >
+            </section> <!-- home -->
 
         <section class="chiSono" id="chiSono">
 
@@ -78,7 +93,6 @@
                 </div>
             </div>
         
-            <div class="cs-divider"></div>
         
             <div class="container">
                 <div class="card-chiSono">
@@ -113,7 +127,7 @@
                 </div>
             </div>
         
-        </section>
+        </section> <!-- chi sono -->
 
         <section class="progettiDeveloper" id="progetti">
             <h1>Progetti</h1>
@@ -152,7 +166,7 @@
                 </div>
             </div>
 
-        </section>
+        </section> <!-- progetti developer -->
 
         <section class="progettiDesigner" id="Graphic">
             <h1>Designer</h1>
@@ -313,16 +327,10 @@
                             </div>
                         </div>
                     </div>
-
                 </div> <!-- track -->
-
-                </div>
-            </div>
-
-            
-
-
-        </section>
+                </div> <!-- carousel -->
+            </section> <!-- progetti designer -->
+        </main>
 
         <footer>
             <p>2026 - Raffaele Pio Mantuano</p>
