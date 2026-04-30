@@ -130,4 +130,8 @@ a{
         margin-top: 10px;
     }
 
+    iframe{
+        width: 100%;
+    }
+
 }
